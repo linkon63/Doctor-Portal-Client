@@ -25,7 +25,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         data.date = date;
         data.created = new Date();
 
-        fetch('https://doctor-portal-server-side.herokuapp.com/addAppointment', {
+        fetch('https://doctor-portal-server-7qbf.onrender.com/addAppointment', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

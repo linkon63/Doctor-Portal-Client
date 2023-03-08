@@ -33,7 +33,7 @@ const AddDoctor = () => {
         formData.append('name', info.name);
         formData.append('email', info.email);
 
-        fetch('https://doctor-portal-server-side.herokuapp.com/addADoctor', {
+        fetch('https://doctor-portal-server-7qbf.onrender.com/addADoctor', {
             method: 'POST',
             body: formData
         })
@@ -44,7 +44,7 @@ const AddDoctor = () => {
             .catch(error => {
                 console.error(error)
             })
-       alert('Doctor has been added')     
+        alert('Doctor has been added')
     }
 
     return (

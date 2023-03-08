@@ -25,7 +25,7 @@ const Dashboard = () => {
     };
 
     useEffect(() => {
-        fetch(`https://doctor-portal-server-side.herokuapp.com/appointmentsByDate`, {
+        fetch(`https://doctor-portal-server-7qbf.onrender.com/appointmentsByDate`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ date: selectedDate, email: loggedInUser.email })

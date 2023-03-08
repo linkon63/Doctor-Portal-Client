@@ -8,7 +8,7 @@ const Doctor = ({ doctor }) => {
             {
                 doctor.image ? <img style={{ height: '200px' }} src={`data:image/png;base64,${doctor.image.img}`} />
                     :
-                    <img style={{ height: '200px' }} className="img-fluid mb-3" src={`https://doctor-portal-server-side.herokuapp.com/${doctor.img}`} alt="" />
+                    <img style={{ height: '200px' }} className="img-fluid mb-3" src={`https://doctor-portal-server-7qbf.onrender.com/${doctor.img}`} alt="" />
             }
             <h4>{doctor.name}</h4>
             <p> <FontAwesomeIcon className="text-primary" icon={faPhoneAlt} /> +880-188-934789</p>

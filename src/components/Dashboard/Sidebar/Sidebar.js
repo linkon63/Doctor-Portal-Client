@@ -10,7 +10,7 @@ const Sidebar = () => {
     const [isDoctor, setIsDoctor] = useState(false);
 
     useEffect(() => {
-        fetch('https://doctor-portal-server-side.herokuapp.com/isDoctor', {
+        fetch('https://doctor-portal-server-7qbf.onrender.com/isDoctor', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
